@@ -101,7 +101,7 @@ class ProductData:
             name = kwargs.get('name', "")
             description = kwargs.get('description', "")
             price = kwargs.get('price', 0)
-            is_service =kwargs.get('is_service', 0)
+            is_service = kwargs.get('is_service', 0)
             amount = kwargs.get('amount', 0)
             query = select(Product).where(Product.id == product_id)
             result = self.db.execute(query)
